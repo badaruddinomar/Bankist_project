@@ -1,0 +1,341 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+html {
+  font-size: 62.5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  width: 100vw;
+  padding: 0 4rem;
+  background: rgb(243, 243, 243);
+}
+.nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .login-text {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.nav .logo-png {
+  width: 5rem;
+  height: 5rem;
+}
+.nav .login {
+  border: none;
+  outline: none;
+  background: rgb(243, 238, 238);
+  padding: 0.7rem 0.8rem;
+  border-radius: 30px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 120px;
+  margin-right: 1rem;
+}
+.nav .login::placeholder {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: gray;
+}
+.nav .btn-login {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.23s;
+}
+.nav .btn-login:hover {
+  color: gray;
+}
+main {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1.5s;
+  opacity: 0;
+}
+main .container {
+  width: 1100px;
+  height: 100%;
+  padding: 2rem;
+  transition: opacity 0.23s;
+}
+main .container .curBalance-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+  width: 100%;
+}
+main .container .curBalance-row .curBalance-h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+main .container .curBalance-row .balanceDate {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+main .container .curBalance-row .balance {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+main .container .balanceShowCase {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+main .container .balanceShowCase .balance-list {
+  width: 55%;
+  height: 100%;
+  background: white;
+  margin-right: 1rem;
+  overflow: scroll;
+}
+main .container .balanceShowCase .balance-list ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  border-bottom: 1px solid cornsilk;
+  height: 70px;
+}
+main .container .balanceShowCase .balance-list ul li p {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+main .container .balanceShowCase .balance-list ul li p .depositeInd {
+  background: #6bcb71;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+main .container .balanceShowCase .balance-list ul li p .withdrawalInd {
+  background: #f03e5d;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+main .container .balanceShowCase .balance-list ul li .balance-value {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+main .container .transaction {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .container .transaction div {
+  flex: 1;
+}
+main .container .transfer-money {
+  background: #ffc703;
+  border-radius: 10px;
+  width: 400px;
+  height: 170px;
+  padding: 2rem;
+}
+main .container .transfer-money h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+main .container .transfer-money div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .container .transfer-money div div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+main .container .transfer-money div div input {
+  border: none;
+  outline: none;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+}
+main .container .transfer-money div div label {
+  font-size: 1.4rem;
+}
+main .container .transfer-money div button {
+  align-self: flex-start;
+  padding: 0.2rem 0.7rem;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 1.7rem;
+}
+main .container .request-loan {
+  height: 170px;
+  width: 400px;
+  border-radius: 10px;
+  background: #6bcb71;
+  margin: 1rem 0;
+  padding: 2rem;
+}
+main .container .request-loan h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+main .container .request-loan div div input {
+  border: none;
+  outline: none;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+  align-self: flex-start;
+}
+main .container .request-loan div div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+main .container .request-loan div {
+  display: flex;
+}
+main .container .request-loan div div label {
+  font-size: 1.4rem;
+  align-self: flex-start;
+}
+main .container .request-loan div button {
+  display: inline;
+  align-self: flex-start;
+  padding: 0.2rem 0.7rem;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 1.7rem;
+}
+main .container .close-account {
+  height: 170px;
+  width: 400px;
+  border-radius: 10px;
+  background: #f03e5d;
+  padding: 2rem;
+}
+main .container .close-account h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+main .container .close-account div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .container .close-account div div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+}
+main .container .close-account div div input {
+  border: none;
+  outline: none;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+}
+main .container .close-account div div label {
+  font-size: 1.4rem;
+}
+main .container .close-account div button {
+  align-self: flex-start;
+  padding: 0.2rem 0.7rem;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 1.7rem;
+}
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.footer .inOutInterest {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .inOutInterest p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.footer .inOutInterest .in span {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #6bcb71;
+  margin-left: 0.5rem;
+}
+.footer .inOutInterest .out {
+  margin: 0 2rem;
+}
+.footer .inOutInterest .out span {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #f03e5d;
+  margin-left: 0.5rem;
+}
+.footer .inOutInterest .interest span {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #ffc703;
+  margin-left: 0.5rem;
+}
+.footer .sort {
+  margin-left: 18rem;
+}
+.footer .sort .sortBtn {
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.23s;
+}
+.footer .sort .sortBtn:hover {
+  color: gray;
+}
+.footer .sort .sortBtn span {
+  margin-top: 0.3rem;
+}
+.footer .logOut p {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.footer .logOut p span {
+  font-weight: 800;
+}

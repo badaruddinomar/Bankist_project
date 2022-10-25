@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Bankist project</title>
+  </head>
+  <body>
+    <section class="nav">
+      <h1 class="login-text">Log in to get started</h1>
+      <img src="./images/logo.png" class="logo-png" alt="" />
+      <div>
+        <input type="text" placeholder="user" class="userLogin-input login" />
+        <input type="number" placeholder="PIN" class="userPin-input login" />
+        <button class="btn-login">&rightarrow;</button>
+      </div>
+    </section>
+    <main class="userInfo">
+      <div class="container">
+        <!-- current balance and date at top  -->
+        <div class="curBalance-row">
+          <div>
+            <h2 class="curBalance-h2">Current balance</h2>
+            <p class="balanceDate">
+              As of <span class="balanceDateValue">05/03/2037</span>
+            </p>
+          </div>
+          <div>
+            <h1 class="balance">0000€</h1>
+          </div>
+        </div>
+
+        <div class="balanceShowCase">
+          <!-- balance list  -->
+          <div class="balance-list">
+            <ul class="balanceList-ul">
+              <li class="balanceList-li">
+                <p class="deposite">
+                  <span class="depositeInd">1 DEPOSITE</span>
+                  <span class="balance-date">3 days ago</span>
+                </p>
+                <p class="balance-value"></p>
+              </li>
+              <li class="balanceList-li">
+                <p class="withdrawal">
+                  <span class="withdrawalInd"> 1 WITHDRAWAL</span>
+                  <span class="balance-date">3 days ago</span>
+                </p>
+                <p class="balance-value"></p>
+              </li>
+            </ul>
+          </div>
+          <!-- balance transaction -->
+          <div class="transaction">
+            <!-- transfer money -->
+            <div class="transfer-money">
+              <h3>Transfer Money</h3>
+              <div>
+                <div>
+                  <input type="text" class="transferTo" />
+                  <label for="">Transfer to </label>
+                </div>
+                <div>
+                  <input type="text" class="transferTo-amount" />
+                  <label for="">Amount </label>
+                </div>
+                <button class="btnRightArrow transferBtn">&rightarrow;</button>
+              </div>
+            </div>
+            <!-- transfer loan -->
+            <div class="request-loan">
+              <h3>Request loan</h3>
+              <div>
+                <div>
+                  <input type="number" class="loanInput" />
+                  <label for="">Amount</label>
+                </div>
+                <button class="btnRightArrow loanBtn">&rightarrow;</button>
+              </div>
+            </div>
+            <!-- close account -->
+            <div class="close-account">
+              <h3>Close Account</h3>
+              <div>
+                <div>
+                  <input type="text" class="closeAccountName" />
+                  <label for="">Confirm User</label>
+                </div>
+                <div>
+                  <input type="password" class="closeAccountPin" />
+                  <label for="">Confirm PIN</label>
+                </div>
+                <button class="btnRightArrow closeBtn">&rightarrow;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="inOutInterest">
+            <p class="in">In <span class="inValue">0000€</span></p>
+            <p class="out">Out<span class="outValue">0000€</span></p>
+            <p class="interest">
+              Interest<span class="interestValue">0000€</span>
+            </p>
+            <div class="sort">
+              <button class="sortBtn">
+                &downarrow;<span class="btnSort">SORT</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="logOut">
+            <p>
+              You will be logged out in
+              <span class="logOutTimer">05:00</span> minute
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+
+  <!-- ! Project Idea "Jonas" Udemy Instuctor  -->
+</html>
